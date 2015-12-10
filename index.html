@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<p> Timer </p>
+<form method="post">	
+ <select id="menu" name="timermenu" onchange="changeHiddenInput(this)">
+  <option value="30">1/2 minute</option>
+  <option value="60">1 minute</option>
+  <option value="120">2 minutes</option>
+  <option value="300">5 minutes</option>
+  <option value="600">10 minutes</option>
+  <option value="900">15 minutes</option>
+  <option value="1200">20 minutes</option>
+  <option value="1500">25 minutes</option>
+  <option value="2400">30 minutes</option>
+  <option value="2700">35 minutes</option>
+  <option value="3600">40 minutes</option>
+  <option value="3900">45 minutes</option>
+  <option value="4800">50 minutes</option>
+  <option value="5100">55 minutes</option>
+  <option value="6400">60 minutes</option>
+ </select>
+ <input type="hidden" name="hiddenInput" id="hiddenInput" value=""/>
+	<p id="clock"></p>
+	</form>
+		<button onclick="startTimer(select)">Click to set timer</button>
+		<p>
+		If you want to set a new timer refresh the page!
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
